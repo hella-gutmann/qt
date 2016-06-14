@@ -1,0 +1,6 @@
+[submodule "5.5.1-build"]
+	path = 5.5.1-build
+	url = git@hggit1.gmmdb.local:win32/qt-build.git
+[submodule "5.5.1-req"]
+	path = 5.5.1-req
+	url = git@hggit1.gmmdb.local:win32/qt-req.git
