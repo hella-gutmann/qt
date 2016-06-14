@@ -1,0 +1,3 @@
+[submodule "build"]
+	path = build
+	url = git@hggit1.gmmdb.local:win32/qt-build.git
