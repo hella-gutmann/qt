@@ -123,9 +123,9 @@ if not "%OpenSSLPath%"=="" (
 if not "%MYSQLPath%"=="" (
 	set MYSQL_PATH=%MYSQLPath%
 	set QT_CFLAGS_MYSQL=%MYSQLPath%\include
-	set QT_LFLAGS_MYSQL=%MYSQLPath%\lib
-	set Configuration= %Configuration% -plugin-sql-mysql -l libmysql
-	REM set Configuration= %Configuration% -plugin-sql-mysql -I "%MYSQLPath%\include" -L "%MYSQLPath%\lib" -l libmysql
+	set QT_LFLAGS_MYSQL=%MYSQLPath%\lib	
+	set Configuration= %Configuration% -plugin-sql-mysql -I "%MYSQLPath%\include" -L "%MYSQLPath%\lib"
+	REM set Configuration= %Configuration% -plugin-sql-mysql -l libmysql
 )
 set Configuration= %Configuration% -nomake tests -nomake examples
 set Configuration= %Configuration% -skip qtwebkit-examples

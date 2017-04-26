@@ -4,10 +4,11 @@ pushd .
 cd %cd%
 
 set Version=%~f1
+set Architecture=%~3
 
 set SourcePath=%Version%-src
-set WorkPath=%Version%-work
-set InstallPath=%Version%-build
+set WorkPath=%Version%-%Architecture%-work
+set InstallPath=%Version%-%Architecture%-build
 
 
 popd
@@ -20,7 +21,7 @@ popd
 pushd .
 cd %cd%
 
-call "%~dp0helper_configure_qt.cmd" "%SourcePath%" "%WorkPath%" "%InstallPath%" "%~f2" "%~3" "%~4"
+call "%~dp0helper_configure_qt.cmd" "%SourcePath%" "%WorkPath%" "%InstallPath%" "%~f2" "%Architecture%" "%~4"
 
 popd
 
