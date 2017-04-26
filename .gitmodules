@@ -1,0 +1,12 @@
+[submodule "5.8.0-req"]
+	path = 5.8.0-req
+	url = git@hggit1.gmmdb.local:win32/qt-req.git
+	branch = 5.8.0
+[submodule "5.8.0-x86-build"]
+	path = 5.8.0-x86-build
+	url = git@hggit1.gmmdb.local:win32/qt-build.git
+	branch = 5.8.0
+[submodule "5.8.0-x64-build"]
+	path = 5.8.0-x64-build
+	url = git@hggit1.gmmdb.local:win32/qt-build-x64.git
+	branch = 5.8.0
